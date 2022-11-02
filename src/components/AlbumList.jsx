@@ -4,7 +4,7 @@ import AlbumCard from '../components/AlbumCard'
 export default function AlbumList(){
   const [albums, setAlbums] = useState()
   useEffect(() => {
-    fetch('https://albums-api-c8.web.app/albums')
+    fetch(process.env.REACT_APP_ENDPOINT+'/albums')
       .then(response => response.json())
       .then(setAlbums)
       .catch(alert)
