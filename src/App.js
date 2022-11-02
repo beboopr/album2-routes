@@ -8,12 +8,12 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <h1>yo</h1>
-      {/* <Routes>
+     
+      <Routes>
         <Route index element={<Home />} />
         <Route path="/albums/new" element={<AddAlbum />} />
         <Route path="/albums/:albumId" element={<SingleAlbum />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 }
